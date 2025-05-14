@@ -372,6 +372,7 @@ html, body {
   padding: 60px 20px;
   position: relative;
   overflow: hidden;
+  min-height: 500px;
 }
 
 .footer-flex {
