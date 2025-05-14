@@ -81,7 +81,8 @@ document.addEventListener("DOMContentLoaded", () => {
   lottie.loadAnimation({ container: document.getElementById("lottie-footer-bg"), renderer: "svg", loop: true, autoplay: true, path: `${basePath}ai_based_intelligence.json` });
 
   // Menu actif selon scroll
-  const sections = document.querySelectorAll("section[id]");
+  // const sections = document.querySelectorAll("section[id]");
+  const sections = document.querySelectorAll("section[id], footer[id]");
   const navLinks = document.querySelectorAll(".site-nav a");
   window.addEventListener("scroll", () => {
     let currentSection = "";
