@@ -66,15 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Lotties principaux
-  lottie.loadAnimation({ container: document.getElementById("lottie-hero"), renderer: "svg", loop: true, autoplay: true, path: "ai_based_intelligence.json" });
+  lottie.loadAnimation({ container: document.getElementById("lottie-hero"), renderer: "svg", loop: true, autoplay: true, path: "/pionis/ai_based_intelligence.json" });
   lottie.loadAnimation({ container: document.getElementById("lottie-analytics"), renderer: "svg", loop: true, autoplay: true, path: "analytics.json" });
-  lottie.loadAnimation({ container: document.getElementById("lottie-strategy"), renderer: "svg", loop: true, autoplay: true, path: "strategy.json" });
+  lottie.loadAnimation({ container: document.getElementById("lottie-strategy"), renderer: "svg", loop: true, autoplay: true, path: "/pionis/strategy.json" });
   lottie.loadAnimation({ container: document.getElementById("lottie-marketplace"), renderer: "svg", loop: true, autoplay: true, path: "marketplace.json" });
   lottie.loadAnimation({ container: document.getElementById("lottie-ai"), renderer: "svg", loop: true, autoplay: true, path: "ai.json" });
 
   // Background Lotties
-  lottie.loadAnimation({ container: document.getElementById("lottie-header-bg"), renderer: "svg", loop: true, autoplay: true, path: "ai_based_intelligence.json" });
-  lottie.loadAnimation({ container: document.getElementById("lottie-services-bg"), renderer: "svg", loop: true, autoplay: true, path: "strategy.json" });
+  lottie.loadAnimation({ container: document.getElementById("lottie-header-bg"), renderer: "svg", loop: true, autoplay: true, path: "/pionis/ai_based_intelligence.json" });
+  lottie.loadAnimation({ container: document.getElementById("lottie-services-bg"), renderer: "svg", loop: true, autoplay: true, path: "/pionis/strategy.json" });
   lottie.loadAnimation({ container: document.getElementById("lottie-about-bg"), renderer: "svg", loop: true, autoplay: true, path: "about-bg.json" });
   lottie.loadAnimation({ container: document.getElementById("lottie-cta-bg"), renderer: "svg", loop: true, autoplay: true });
   lottie.loadAnimation({ container: document.getElementById("lottie-footer-bg"), renderer: "svg", loop: true, autoplay: true });
