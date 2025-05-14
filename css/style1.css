@@ -1,0 +1,317 @@
+/* Fichier : css/style.css */
+
+:root {
+    --primary-color: #001f3f;
+    --accent-color: #1abc9c;
+    --light-gray: #f9f9f9;
+    --blue-light: #b8d6f0;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--light-gray);
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Lottie Background */
+  .lottie-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(0.5px);
+  }
+  
+  /* HEADER */
+  .site-header {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    min-height: 80vh;
+    background-color: var(--primary-color);
+    backdrop-filter: blur(4px);
+    color: white;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+  }
+  .header-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+  }
+  .logo-img {
+    height: 60px;
+  }
+  .site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .site-nav a {
+    color: #7FDBFF;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding-top: 120px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-text {
+    flex: 1;
+    max-width: 500px;
+    animation: fadeInUp 1s ease forwards;
+  }
+  .hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  .hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  .btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  .btn:hover {
+    background: var(--accent-color);
+  }
+  .lottie-container {
+    flex: 1;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+  }
+  
+  /* SERVICES */
+  .service-section {
+    background: #ffffff;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    animation: fadeInDown 0.8s ease forwards;
+  }
+  .service-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .service-box {
+    background: white;
+    border: 2px solid var(--blue-light);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  .service-box:hover {
+    transform: translateY(-5px);
+  }
+  .icon-service {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  .service-box h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  
+  /* ABOUT */
+  .about-section {
+    background: var(--light-gray);
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-values {
+    list-style: none;
+    padding-left: 0;
+  }
+  .about-values li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    animation: fadeInLeft 1s ease forwards;
+  }
+  
+  /* CTA */
+  .cta-section {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeIn 1.2s ease forwards;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  /* FOOTER */
+  .site-footer {
+    background: #34495e;
+    color: white;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .footer-left a {
+    color: #7FDBFF;
+    text-decoration: none;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .contact-form button {
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .contact-form button:hover {
+    background: #148f77;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero-content, .service-grid, .footer-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+    .service-box {
+      flex: 1 1 100%;
+    }
+    .header-flex {
+      flex-direction: column;
+    }
+    .site-nav ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  }
+  
