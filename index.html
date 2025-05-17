@@ -82,6 +82,7 @@
 
   <!-- À PROPOS -->
   <section class="about-section" id="about">
+    <!-- <div class="lottie-bg" id="lottie-hero-bg"></div> -->
     <div class="container">
       <h2 class="section-title">Qui sommes-nous ?</h2>
       <div class="about-intro-box">
@@ -165,10 +166,12 @@
       </div>
       <div class="footer-right">
         <h3>Nous écrire</h3>
-        <form class="contact-form" action="send_mail.php" method="POST">
+        <form class="contact-form" action="https://formsubmit.co/ayizou.ar@gmail.com" method="POST">
           <input type="text" name="name" placeholder="Votre nom" required>
           <input type="email" name="email" placeholder="Votre email" required>
           <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+          <input type="hidden" name="_captcha" value="False">
+          <input type="hidden", name="_next" value="https://pionis.github.io/pionis/merci.html">
           <button type="submit">Envoyer</button>
         </form>
       </div>
