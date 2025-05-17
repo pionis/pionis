@@ -211,7 +211,7 @@ html, body {
   border: 2px solid var(--primary-color);
   padding: 20px;
   border-radius: 8px;
-  flex: 1 1 calc(25% - 20px);
+  flex: 1 1 calc(20% - 20px);
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
