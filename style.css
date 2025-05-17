@@ -179,22 +179,6 @@ html, body {
   font-weight: normal;
 }
 
-@media (max-width: 768px) {
-  .hero .hero-top {
-    flex-direction: column;
-  }
-  .hero h1 {
-    text-align: center;
-  }
-  .lottie-container {
-    width: 200px;
-    height: 200px;
-  }
-  .footer-flex {
-    flex-direction: column;
-  }
-}
-
 /* SERVICES */
 .service-section {
   background: #ffffff;
@@ -223,7 +207,7 @@ html, body {
   border: 2px solid var(--primary-color);
   padding: 20px;
   border-radius: 8px;
-  flex: 1 1 calc(20% - 20px);
+  flex: 1 1 calc(25% - 20px);
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
@@ -337,13 +321,6 @@ html, body {
   margin: 5px 0;
 }
 
-@media (max-width: 768px) {
-  .member-card {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
-
 /* CTA */
 .cta-section {
   background: var(--primary-color);
@@ -438,19 +415,54 @@ html, body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero-content, .service-grid, .footer-flex {
+  .hero-content,
+  .service-grid,
+  .footer-flex,
+  .header-flex,
+  .about-members {
     flex-direction: column;
     align-items: center;
   }
-  .service-box {
-    flex: 1 1 100%;
-  }
-  .header-flex {
-    flex-direction: column;
-  }
+
   .site-nav ul {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
+    align-items: center;
+  }
+
+  .service-box,
+  .member-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .logo-img {
+    height: 60px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8em;
+  }
+
+  .hero-text p,
+  .cta-section p,
+  .about-intro-box p,
+  .about-team-box p {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .lottie-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .site-footer {
+    text-align: center;
+  }
+
+  .footer-right h3 {
+    font-size: 1.2em;
   }
 }
